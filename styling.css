@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    margin: 0;
+}
+
+body > header {
+    padding: 10px;
+}
+
+body > header > h1, header>h2 {
+    text-align: center;
+}
+
+body > header > div[contact] {
+    display: flex;
+    justify-content: space-between;
+}
+
+body > header > div[contact] > p {
+    width: 140px;
+}
+
+body > header > div[contact] > p:last-child {
+    text-align: right;
+}
+
+span[badge] {
+    font-weight: 100;
+    font-size: 0.8em;
+    color: #3f3f3f;
+    border: 1px solid #a7a7a7;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+span[badge][big] {
+    font-size: 1.25rem;
+    padding: 5px;
+}
+
+p[full-width-badge] {
+    padding: 2px;
+    border: 1px solid #acacac;
+    border-radius: 3px;
+    font-size: 1em;
+    break-inside: avoid-column;
+}
+
+p[full-width-badge] > a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1[space-between], h2[space-between], h3[space-between] {
+    display: flex;
+    justify-content: space-between;
+}
+
+article:not([no-column]) {
+    column-count: 2;
+}
+
+article > section {
+    margin-bottom: 10px;
+    border-left: 1px solid #8f8f8f;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+div[tag-list] {
+    column-count: 4;
+}
+div[tag-list] > p[tag] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: monospace;
+    margin-bottom: 4px;
+    break-inside: avoid-column;
+}
+
+
+article > h1, article>h2, article>h3, article>h4 {
+    margin: 10px 0;
+}
+
+main {
+    padding: 10px;
+}
+
+p.warning-box {
+    font-size: 0.8rem;
+    color: #2a2a2a;
+    margin: 5px 20px;
+}

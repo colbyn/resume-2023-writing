@@ -2,40 +2,147 @@
 <html>
 <head>
     <title>Colbyn Wadman</title>
-    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
-    <link href="styling.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="/styling.css" rel="stylesheet" />
 </head>
 <body>
     <header>
         <h1>Colbyn Wadman</h1>
         <h2>College Student</h2>
-        <div>
-            <p>hello@colbyn.com</p>
-            <p>I solve problems.</p>
-            <p>801-367-4487</p>
+        <div contact>
+            <p><span badge big>hello@colbyn.com</span></p>
+            <p>“I solve problems.”</p>
+            <p><span badge big>801-367-4487</span></p>
         </div>
     </header>
     <main>
-        <article>
+        <article no-column>
             <h1>About Me</h1>
-            <p></p>
+            <section>
+                <p>Hello, my name is Colbyn Wadman and I’m a problem solver, thinker, aspiring academic, and part time entrepreneur.</p>
+            </section>
         </article>
         <article>
             <h1>History</h1>
-            <h2>Notable Side Projects</h2>
-            <section>
-
-            </section>
             <h2>Notable Jobs</h2>
             <section>
-            
+                <h3>UVU | CS Grader - Computer Science</h3>
+                <p>In my first semester at UVU I took CS1400 by professor Bianca Ruiz, whom then offered me a grading position at the end of
+                the semester.</p>
+            </section>
+            <section>
+                <h3>Uplynk/VDMS (Verizon Digital Media Services)</h3>
+                <p>Jr. developer in the QA team lead by Asiel Brumfield.</p>
+            </section>
+            <section>
+                <h3>Galileo Processing</h3>
+                <p>Data center tech, worked with Robert Raver.</p>
+            </section>
+            <section>
+                <h3>Space Monkey</h3>
+                <p>Brief summer internship, back when I was 16 or 17, under my mentor, Tom Metge (when their office was located in Murray).</p>
+            </section>
+            <h2>Notable Side Projects</h2>
+            <section>
+                <h3>Colbyn’s Math Notes</h3>
+                <p>I’ve been writing my own note taking tools in college, including this site. I also wrote the toolchain that compiled the
+                HTML pages into the final result.</p>
+                <foooter>
+                    <p full-width-badge><a href="https://colbyn.github.io/school-notes-spring-2020/">https://colbyn.github.io/school-notes-spring-2020/</a></p>
+                    <p class="warning-box">Regarding the link, technically it should be ‘spring-2021’.</p>
+                    <p class="warning-box">Be advised, the site may take a second to load since it contains multiple semesters worth of math notes and the math
+                    formulas are compiled from LaTeX markup at runtime using a JavaScript compiler. Can also be accessed via the <a href="https://colbyn.com">colbyn.com</a> proxy (though it may change in the future).</p>
+                </foooter>
+            </section>
+            <section>
+                <h3 space-between>Subscript <span badge>Work In Progress</span></h3>
+                <h4>iPad note taking app</h4>
+                <p>A static site generator for publishing freeform content on the web (via an iOS app and your Apple Pencil), such as your
+                school notes.</p>
+                <p>With Subscript you can build your own websites with your own hand drawn notes and is optimized
+                for speed using (linkable) hierarchical organization without flipping through pages.</p>
+                <foooter>
+                    <p>Example, my old freeform chemistry notes compiled via the app (pretty cool),</p>
+                    <p full-width-badge><a href="https://content.subscript.app/dev/chemistry-1010---fall-2021/index.html">https://content.subscript.app/dev/chemistry-1010---fall-2021/index.html</a></p>
+                    <p class="warning-box">I’ve also been experimenting with an associated markup language (which I hope will one day become popular in academia), of which I’d like to eventually integrate into the Subscript MacOS/iOS app using a custom text editor that supports 🌈 brackets (which isn’t possible using traditional contextless parsing methods).</p>
+                </foooter>
+            </section>
+            <section>
+                <h3>Imager</h3>
+                <h4>Automated (Brute Force) Image Compression</h4>
+                <p>Optimizes the compression using ML based metrics (using Netflix's VMAF tool) in a trial and error manner.</p>
+                <foooter>
+                    <p full-width-badge><a href="https://imager.io">https://imager.io</a></p>
+                </foooter>
             </section>
         </article>
-        <article>
+        <article no-column>
             <h2>Professional Interests & Skills</h2>
-        </article>
-        <article>
-            <h1>Links</h1>
+            <h3>Experience</h3>
+            <h4>Tags</h4>
+            <div tag-list>
+                <p tag>Full-Stack</span>
+                <p tag>MacOS/iOS development</span>
+                <p tag>UIKit, AppKit, and SwiftUI ❤️</p>
+                <p tag>Video</span>
+                <p tag>Parsing</span>
+                <p tag>Compilers</span>
+                <p tag>Functional Programming</span>
+                <p tag>Type Systems</span>
+                <p tag>Rust</span>
+                <p tag>Swift</span>
+                <p tag>Haskell</span>
+                <p tag>PureScript</span>
+                <p tag>Elm</span>
+                <p tag>Julia</span>
+                <p tag>Python</span>
+                <p tag>HTML/CSS/JavaScript</span>
+                <p tag>LaTeX</p tag>
+            </div>
+            <h3>Links</h3>
+            <table links>
+                <tr>
+                    <td>[†]</td>
+                    <td>The Imager Landing Page</td>
+                    <td><a href="https://imager.io">imager.io</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>My Beautiful Math Notes</td>
+                    <td><a href="https://colbyn.github.io/school-notes-spring-2020/">colbyn.github.io/school-notes-spring-2020/</a>
+                    </td>
+                    <td><small>(This was the forerunner to Subscript.)</small></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>My Personal GitHub Profile</td>
+                    <td><a href="https://github.com/colbyn">github.com/colbyn</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>The Imager GitHub Organization</td>
+                    <td><a href="https://github.com/imager-io">github.com/imager-io</a></td>
+                    <td><small>(Showcases my experience with low-level video codecs.)</small></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>The online version of this résumé</td>
+                    <td><a href="https://colbyn.github.io/resume-2023/">colbyn.github.io/resume-2023/</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>This is what Bash should look like</td>
+                    <td><a href="https://github.com/colbyn/commands">github.com/colbyn/commands</a></td>
+                    <td></td>
+                </tr>
+            </table>
         </article>
     </main>
 </body>
