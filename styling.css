@@ -13,6 +13,10 @@ p {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 body > header {
     padding: 10px;
 }
@@ -89,7 +93,6 @@ div[tag-list] > p[tag] {
     margin-bottom: 4px;
     break-inside: avoid-column;
 }
-
 
 article > h1, article>h2, article>h3, article>h4 {
     margin: 10px 0;
